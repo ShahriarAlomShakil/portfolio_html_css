@@ -1079,6 +1079,35 @@ img { max-width:100%; display:block; }
   .about-grid { grid-template-columns:1fr; gap:36px; }
   .about-img-frame { max-height:300px; }
 
+  /* Improve About layout on mobile: center image, tighten spacing, center text */
+  .about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .about-img-frame {
+    width: 260px;
+    aspect-ratio: 3/4;
+    max-height: none;
+    border-radius: 14px;
+  }
+  .about-info-list {
+    margin-top: 8px;
+    align-items: center;
+    text-align: center;
+  }
+  .about-info-item {
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 8px;
+  }
+  .about-info-item i { width:18px; }
+  .about-right { text-align: center; }
+  .about-right h3 { font-size: 1.35rem; }
+  .about-right p { font-size: 0.96rem; }
+  .about-actions { justify-content: center; }
+
   /* Skills */
   .skills-grid { grid-template-columns:1fr; }
 
