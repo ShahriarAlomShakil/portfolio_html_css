@@ -130,6 +130,24 @@ img { max-width:100%; display:block; }
 .nav-logo:hover { color: var(--purple); }
 .bracket { color: var(--cyan); }
 
+/* Small logo image used in nav and footer */
+.nav-logo .logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Accessible only text */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
